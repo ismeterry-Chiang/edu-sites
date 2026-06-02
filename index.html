@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大學生年度封神・學習神器 7 選</title>
+<meta name="description" content="整理自影片介紹的 7 個免費學習神器網站，含 PhET、Class Central、雾象 Fogsight、LetMe English、凹凸工坊等。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4eee1;
+    --paper-2:#efe7d6;
+    --ink:#241f1a;
+    --ink-soft:#5a5046;
+    --line:#d8ccb4;
+    --accent:#c0492b;      /* terracotta */
+    --accent-2:#1f6b5c;    /* deep teal  */
+    --gold:#b8893a;
+    --shadow:18px 18px 0 rgba(36,31,26,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans TC",sans-serif;
+    font-weight:400;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(36,31,26,.05) 1px, transparent 0);
+    background-size:22px 22px;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--accent);color:var(--paper)}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+
+  /* ---------- HERO ---------- */
+  header{padding:84px 0 40px;position:relative}
+  .eyebrow{
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    letter-spacing:.04em;color:var(--accent);font-size:clamp(15px,2.2vw,20px);
+    margin-bottom:18px;
+  }
+  h1{
+    font-family:"Noto Serif TC",serif;font-weight:900;
+    font-size:clamp(40px,8.5vw,84px);line-height:1.04;letter-spacing:-.01em;
+    margin-bottom:8px;
+  }
+  h1 .mark{
+    color:var(--accent);position:relative;display:inline-block;
+  }
+  h1 .num-en{
+    font-family:"Fraunces",serif;font-weight:900;font-style:italic;
+    color:var(--accent-2);
+  }
+  .lede{
+    max-width:640px;margin-top:26px;font-size:clamp(15px,2vw,18px);
+    color:var(--ink-soft);font-weight:300;
+  }
+  .lede b{font-weight:500;color:var(--ink)}
+  .src{
+    margin-top:30px;display:inline-flex;align-items:center;gap:10px;
+    font-size:13.5px;color:var(--ink-soft);border:1px solid var(--line);
+    padding:8px 16px;border-radius:40px;background:rgba(255,255,255,.4);
+  }
+  .src svg{width:15px;height:15px;flex:none}
+
+  .rule{height:2px;background:var(--ink);margin:46px 0 8px;
+    position:relative;overflow:visible}
+  .rule::after{content:"";position:absolute;right:0;top:-4px;width:10px;height:10px;
+    background:var(--accent);border-radius:50%}
+
+  /* ---------- CARDS ---------- */
+  .grid{display:flex;flex-direction:column;gap:0}
+  .card{
+    display:grid;grid-template-columns:120px 1fr;gap:30px;
+    padding:46px 4px;border-bottom:1px solid var(--line);
+    position:relative;
+    opacity:0;transform:translateY(26px);
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+  .card:last-child{border-bottom:0}
+
+  .idx{position:relative}
+  .idx .n{
+    font-family:"Fraunces",serif;font-weight:900;font-size:clamp(58px,11vw,104px);
+    line-height:.8;color:var(--ink);
+  }
+  .card:nth-child(odd) .idx .n{color:var(--accent)}
+  .card:nth-child(even) .idx .n{color:var(--accent-2)}
+  .tag{
+    display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.06em;
+    padding:4px 11px;border:1px solid var(--line);border-radius:30px;
+    color:var(--ink-soft);background:rgba(255,255,255,.45);white-space:nowrap;
+  }
+
+  .body .name{
+    font-family:"Noto Serif TC",serif;font-weight:900;
+    font-size:clamp(24px,4vw,33px);line-height:1.2;letter-spacing:-.01em;
+  }
+  .body .en{
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    color:var(--accent-2);font-size:.62em;margin-left:6px;letter-spacing:0;
+  }
+  .tagline{
+    font-size:clamp(15px,2.1vw,18.5px);font-weight:500;margin:10px 0 16px;
+    color:var(--ink);
+  }
+  .body p.desc{color:var(--ink-soft);font-weight:300;font-size:15.3px;max-width:600px}
+  .body p.desc .hl{color:var(--ink);font-weight:500;
+    box-shadow:inset 0 -.5em 0 rgba(192,73,43,.14)}
+
+  .link{
+    display:inline-flex;align-items:center;gap:9px;margin-top:20px;
+    font-family:"Fraunces",serif;font-weight:600;font-size:16px;
+    color:var(--ink);text-decoration:none;
+    border-bottom:2px solid var(--accent);padding-bottom:2px;
+    transition:color .2s,gap .2s;
+  }
+  .link:hover{color:var(--accent);gap:14px}
+  .link .arrow{transition:transform .2s}
+  .link:hover .arrow{transform:translateX(3px) translateY(-2px)}
+  .note{
+    margin-top:12px;font-size:12.8px;color:var(--gold);font-style:italic;
+    font-family:"Fraunces",serif;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:60px 0 90px;text-align:center;color:var(--ink-soft)}
+  footer .big{
+    font-family:"Noto Serif TC",serif;font-weight:700;color:var(--ink);
+    font-size:clamp(20px,3.4vw,28px);margin-bottom:14px;
+  }
+  footer .meta{font-size:13.5px;font-weight:300;line-height:2}
+  footer a{color:var(--accent);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+
+  @media(max-width:640px){
+    header{padding:60px 0 24px}
+    .card{grid-template-columns:1fr;gap:6px;padding:38px 2px}
+    .idx{display:flex;align-items:baseline;gap:16px;margin-bottom:6px}
+    .idx .n{font-size:62px}
+    .tag{margin-top:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">College Students' Annual Pick — 學習神器 ✦ 2025</div>
+    <h1>大學生年度封神的<br><span class="num-en">7</span> 個<span class="mark">學習神器</span></h1>
+    <p class="lede">整理自影片所介紹、口碑爆棚的免費學習網站。從<b>理科可視化</b>、<b>名校線上課程</b>，到<b>AI 動畫</b>、<b>英文自學</b>與<b>手寫稿產生器</b>——點開卡片就能直接前往。</p>
+    <span class="src">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+      內容整理自影片創作者「小鱼不加咖啡X」《大學生年度封神的學習神器》
+    </span>
+    <div class="rule"></div>
+  </header>
+
+  <main class="grid">
+
+    <!-- 1 PhET -->
+    <article class="card" style="animation-delay:.05s">
+      <div class="idx"><div class="n">01</div><span class="tag">理科 · STEM</span></div>
+      <div class="body">
+        <div class="name">PhET 互動式模擬教材<span class="en">Interactive Simulations</span></div>
+        <div class="tagline">把理科知識變成可以「玩」的互動實驗。</div>
+        <p class="desc">美國科羅拉多大學開發，涵蓋<span class="hl">物理、化學、數學、地球科學、生物</span>。用拖拉、滑桿即時操作，把抽象概念變成像玩遊戲一樣直觀的模擬實驗。全球已被使用超過 18 億次，<span class="hl">完全免費</span>、瀏覽器直接開、支援多語言（含繁體中文）。</p>
+        <a class="link" href="https://phet.colorado.edu" target="_blank" rel="noopener">phet.colorado.edu <span class="arrow">↗</span></a>
+      </div>
+    </article>
+
+    <!-- 2 Class Central -->
+    <article class="card" style="animation-delay:.12s">
+      <div class="idx"><div class="n">02</div><span class="tag">MOOC · 課程聚合</span></div>
+      <div class="body">
+        <div class="name">Class Central<span class="en">線上課程搜尋引擎</span></div>
+        <div class="tagline">一站搜遍全球名校的免費線上課程。</div>
+        <p class="desc">聚合 <span class="hl">Coursera、edX、Udacity</span> 等供應商的 MOOC，收錄 1300+ 所大學、1500+ 名校課程。可依<span class="hl">學生評分與評價</span>篩選排名，找到真正值得修的課，大量課程可免費旁聽——堪稱線上課程界的評價網。</p>
+        <a class="link" href="https://www.classcentral.com" target="_blank" rel="noopener">classcentral.com <span class="arrow">↗</span></a>
+      </div>
+    </article>
+
+    <!-- 3 大學生資源網 -->
+    <article class="card" style="animation-delay:.19s">
+      <div class="idx"><div class="n">03</div><span class="tag">課程資源</span></div>
+      <div class="body">
+        <div class="name">大學生資源網<span class="en">dxzy163</span></div>
+        <div class="tagline">各校課程影片與考試資源大集合。</div>
+        <p class="desc">收錄各大學的<span class="hl">專業課、外語、考研、職業技能</span>課程影片，含英語四六級、CET 等備考資源。<span class="hl">免註冊</span>即可觀看。</p>
+        <a class="link" href="https://www.dxzy163.com" target="_blank" rel="noopener">dxzy163.com <span class="arrow">↗</span></a>
+        <div class="note">※ 介面為簡體中文、內容以中國大陸學制為主。</div>
+      </div>
+    </article>
+
+    <!-- 4 雾象 Fogsight -->
+    <article class="card" style="animation-delay:.26s">
+      <div class="idx"><div class="n">04</div><span class="tag">AI 工具</span></div>
+      <div class="body">
+        <div class="name">雾象 Fogsight<span class="en">AI 動畫引擎</span></div>
+        <div class="tagline">輸入一句話，自動生成科普動畫。</div>
+        <p class="desc">LLM 驅動的<span class="hl">開源</span>動畫生成 Agent：輸入一個概念或問題（如「雙縫實驗」「冒泡排序」），就自動產出含<span class="hl">中英雙語旁白</span>的動態動畫。特別擅長數學、物理、演算法、文學哲學等強邏輯內容，還能多輪對話微調，提供線上版與本地部署。</p>
+        <a class="link" href="https://fogsight.ai" target="_blank" rel="noopener">fogsight.ai <span class="arrow">↗</span></a>
+      </div>
+    </article>
+
+    <!-- 5 LetMe English -->
+    <article class="card" style="animation-delay:.33s">
+      <div class="idx"><div class="n">05</div><span class="tag">英文學習</span></div>
+      <div class="body">
+        <div class="name">LetMe English<span class="en">英文自學站</span></div>
+        <div class="tagline">把整套英文文法與句型免費攤開給你。</div>
+        <p class="desc">系統整理<span class="hl">文法、字彙、常用句型、日常英文、聽力訓練、發音</span>，每個觀念都附說明與配套練習。內容免費、不必報補習班，適合自學打底。</p>
+        <a class="link" href="https://letmeenglish.com" target="_blank" rel="noopener">letmeenglish.com <span class="arrow">↗</span></a>
+      </div>
+    </article>
+
+    <!-- 6 凹凸工坊 -->
+    <article class="card" style="animation-delay:.40s">
+      <div class="idx"><div class="n">06</div><span class="tag">實用工具</span></div>
+      <div class="body">
+        <div class="name">凹凸工坊<span class="en">AutoHanding</span></div>
+        <div class="tagline">把 Word 文件一鍵變成擬真手寫稿。</div>
+        <p class="desc">上傳 Word（.doc/.docx）即可一鍵轉成<span class="hl">逼真手寫圖片</span>：多種真實手寫字體可選，能設定<span class="hl">隨機塗改、凌亂度</span>與紙張背景，600dpi 高清輸出可直接列印。免註冊、免費。</p>
+        <a class="link" href="https://www.autohanding.com" target="_blank" rel="noopener">autohanding.com <span class="arrow">↗</span></a>
+      </div>
+    </article>
+
+    <!-- 7 SaDuck -->
+    <article class="card" style="animation-delay:.47s">
+      <div class="idx"><div class="n">07</div><span class="tag">考試備考</span></div>
+      <div class="body">
+        <div class="name">SaDuck 公考知識庫<span class="en">上岸鸭</span></div>
+        <div class="tagline">免費、免註冊的考公考編知識整理。</div>
+        <p class="desc">系統整理<span class="hl">行測、申論、公基</span>等公務員考試科目知識點，附成語查詢、行測助手、每日晨讀、新聞聯播等備考工具。<span class="hl">永久免費、免登入</span>。</p>
+        <a class="link" href="https://saduck.top" target="_blank" rel="noopener">saduck.top <span class="arrow">↗</span></a>
+        <div class="note">※ 針對中國大陸公務員／事業編考試。</div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="big">收藏起來，學習充電必備 ✦</div>
+    <p class="meta">
+      共 7 個工具・全部免費・大多免註冊<br>
+      內容整理自影片創作者「小鱼不加咖啡X」<br>
+      連結若失效，請以各網站最新狀態為準
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
