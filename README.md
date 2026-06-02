@@ -67,6 +67,6 @@
 
 ## 📌 備註 / Notes
 
-- 內容整理自影片創作者「**小鱼不加咖啡X**」《大學生年度封神的學習神器》。/ *Content compiled from the video by creator "小鱼不加咖啡X".*
+- 115.6.2 內容整理自影片創作者「**小鱼不加咖啡X**」《大學生年度封神的學習神器》。/ *Content compiled from the video by creator "小鱼不加咖啡X".*
 - 各網站之服務、網址與是否免費，請以該網站**最新狀態**為準。/ *Services, URLs, and pricing follow each site's current state.*
 - 本專案僅作學習資源彙整用途，與上述各網站無隸屬關係。/ *This project is a resource roundup only and is not affiliated with the listed sites.*
